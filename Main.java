@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 public class Main {
     public static void main(String[] args) {
-        String jdbcUrl = "jdbc:oracle:thin:@localhost:1521:xe"; // Cambia el URL si es necesario
-        String username = "alquilervehiculo";
-        String password = "1234567";
+        String jdbcUrl = "jdbc:oracle:thin:@localhost:1521:xe"; 
+        String username = "alquilervehiculo"; // Cambia el username al suyo //
+        String password = "1234567"; // Cambia el password al suyo //
 
         try (Connection conn = DriverManager.getConnection(jdbcUrl, username, password)) {
             System.out.println("Conexión exitosa a la base de datos!");
